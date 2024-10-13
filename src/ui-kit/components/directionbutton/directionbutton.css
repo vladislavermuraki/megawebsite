@@ -1,0 +1,45 @@
+/* Основные стили для DirectionButton */
+.direction-button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 32px;
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-body);
+    cursor: pointer;
+    transition: background-color 150ms ease, color 150ms ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стили для Primary кнопки */
+.direction-button--primary.direction-button--static {
+    background-color: var(--color-grey-25);
+    color: var(--label-light-primary);
+}
+
+.direction-button--primary.direction-button--hover {
+    background-color: var(--color-grey-50);
+    color: var(--label-light-primary);
+}
+
+.direction-button--primary.direction-button--pressed {
+    background-color: var(--color-grey-75);
+    color: var(--label-light-primary);
+}
+
+/* Стили для Secondary кнопки */
+.direction-button--secondary.direction-button--static {
+    background-color: var(--color-blue-500);
+    color: var(--label-dark-primary);
+}
+
+.direction-button--secondary.direction-button--hover {
+    background-color: var(--color-blue-400);
+    color: var(--label-dark-primary);
+}
+
+.direction-button--secondary.direction-button--pressed {
+    background-color: var(--color-blue-300);
+    color: var(--label-dark-primary);
+}

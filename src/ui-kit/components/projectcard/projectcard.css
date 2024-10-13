@@ -1,0 +1,71 @@
+/* Общие стили для карточек */
+.project-card {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    flex-direction: column;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+/* Стили для изображения в карточке */
+.project-card-image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.project-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Контент карточки */
+.project-card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+/* Заголовок карточки */
+.project-card-title {
+    font-size: var(--font-size-title4);
+    font-weight: var(--font-weight-regular);
+    margin: 0;
+}
+
+/* Подзаголовок с многоточием, если текст не помещается */
+.project-card-subtitle {
+    font-size: var(--font-size-body);
+    color: var(--label-light-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Размер для карточки compact */
+.project-card--compact .project-card-image {
+    height: 344px; /* Размер изображения для компактной карточки */
+}
+
+.project-card--compact .project-card-title {
+    font-size: var(--font-size-title4);
+}
+
+.project-card--compact .project-card-subtitle {
+    font-size: var(--font-size-body);
+}
+
+/* Размер для карточки large */
+.project-card--large .project-card-image {
+    height: 688px; /* Размер изображения для крупной карточки */
+}
+
+.project-card--large .project-card-title {
+    font-size: var(--font-size-title4);
+}
+
+.project-card--large .project-card-subtitle {
+    font-size: var(--font-size-body);
+}

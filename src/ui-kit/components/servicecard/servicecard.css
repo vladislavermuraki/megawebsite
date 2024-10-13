@@ -1,0 +1,67 @@
+.services-card {
+    display: flex;
+    align-items: baseline; /* Центрируем текст по вертикали */
+    justify-content: start; /* Центрируем текст по горизонтали */
+    color: var(--label-light-primary); /* Цвет текста */
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-title3);
+    font-weight: var(--font-weight-regular);
+    text-align: start; /* Центрируем текст */
+    padding: 16px; /* Отступы по вашему усмотрению */
+    border-radius: 8px; /* Закругление углов */
+    background-size: cover; /* Сделаем изображение на весь блок */
+    background-position: center; /* Центрируем изображение */
+    transition: opacity 0.15s ease; /* Плавный переход для opacity */
+}
+
+/* Стили для Compact */
+.services-card--compact.services-card--extralarge {
+    width: 100%; /* Ширина для экстра большой карточки */
+    height: 344px; /* Высота для экстра большой карточки */
+}
+
+.services-card--compact.services-card--large {
+    width: 288px; /* Ширина для большой карточки */
+    height: 288px; /* Высота для большой карточки */
+}
+
+.services-card--compact.services-card--medium {
+    width: 216px; /* Ширина для средней карточки */
+    height: 232px; /* Высота для средней карточки */
+}
+
+.services-card--compact.services-card--small {
+    width: 164px; /* Ширина для маленькой карточки */
+    height: 164px; /* Высота для маленькой карточки */
+}
+
+.services-card--compact.services-card--extrasmall {
+    width: 128px; /* Ширина для экстра маленькой карточки */
+    height: 128px; /* Высота для экстра маленькой карточки */
+}
+
+/* Стили для Large */
+.services-card--large.services-card--extralarge {
+    width: 100%; /* Ширина для экстра большой карточки */
+    height: 344px; /* Высота для экстра большой карточки */
+}
+
+.services-card--large.services-card--medium {
+    width: 464px; /* Ширина для средней карточки */
+    height: 232px; /* Высота для средней карточки */
+}
+
+.services-card--large.services-card--small {
+    width: 448px; /* Ширина для маленькой карточки */
+    height: 224px; /* Высота для маленькой карточки */
+}
+
+.services-card--large.services-card--extrasmall {
+    width: 288px; /* Ширина для экстра маленькой карточки */
+    height: 288px; /* Высота для экстра маленькой карточки */
+}
+
+/* Состояния при наведении */
+.services-card:hover {
+    opacity: 0.64; /* Прозрачность при наведении */
+}

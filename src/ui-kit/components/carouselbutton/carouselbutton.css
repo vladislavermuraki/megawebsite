@@ -1,0 +1,49 @@
+/* src/components/CarouselButton.css */
+
+.carousel-button {
+    width: 128px; /* Ширина кнопки */
+    height: auto; /* Высота кнопки */
+    background: none;
+    border: none; /* Убираем границу */
+    cursor: pointer; /* Указатель при наведении */
+    display: flex; /* Используем flexbox для выравнивания содержимого */
+    flex-direction: column; /* Располагаем элементы по вертикали */
+    gap: 8px;
+    align-items: center; /* Центрируем по горизонтали */
+    justify-content: center; /* Центрируем по вертикали */
+    transition: opacity 150ms ease; /* Плавный переход */
+}
+
+/* Стиль для статического состояния */
+.carousel-button.carousel-button--static {
+    opacity: 100%;
+}
+
+/* Стиль для состояния наведения */
+.carousel-button.carousel-button--hover {
+    opacity: 64%;
+}
+
+/* Стиль для нажатия */
+.carousel-button.carousel-button--pressed {
+    opacity: 48%;
+}
+
+/* Стили для изображения */
+.carousel-image {
+    width: 64px; /* Ширина изображения */
+    height: 64px; /* Высота изображения */
+    border-radius: 9999px;
+}
+
+/* Стили для текста кнопки */
+.carousel-text {
+    font-family: var(--font-family-helvetica); /* Шрифт для текста */
+    font-size: var(--font-size-body); /* Размер шрифта */
+    color: var(--color-black-0); /* Цвет текста */
+    text-align: center; /* Центрируем текст */
+    white-space: nowrap; /* Запрещаем перенос строк */
+    overflow: hidden; /* Скрываем текст, который не помещается */
+    text-overflow: ellipsis; /* Добавляем троеточие, если текст не помещается */
+    max-width: 100%; /* Ограничиваем ширину текста размерами кнопки */
+}

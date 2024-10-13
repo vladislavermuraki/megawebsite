@@ -1,0 +1,40 @@
+/* src/components/Button.css */
+.button {
+    display: flex;
+    justify-content: left;
+    text-align: left;
+    padding: 6px 10px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    transition: color 150ms ease; /* Плавный переход для изменения фона */
+}
+
+/* Primary Button Styles */
+.button.primary.button--static {
+    color: var(--label-light-primary); /* --label-light-primary */
+}
+
+.button.primary.button--hover {
+    color: var(--label-light-secondary); /* --label-light-secondary */
+}
+
+.button.primary.button--pressed {
+    color: var(--label-light-tertiary); /* --label-light-tertiary */
+}
+
+/* Secondary Button Styles */
+.button.secondary.button--static {
+    color: var(--label-light-secondary); /* --label-light-secondary */
+}
+
+.button.secondary.button--hover {
+    color: var(--label-light-primary); /* --label-light-primary */
+}
+
+.button.secondary.button--pressed {
+    color: var(--label-light-tertiary); /* --label-light-tertiary */
+}

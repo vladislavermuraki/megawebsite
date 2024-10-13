@@ -1,0 +1,39 @@
+/* src/components/Projects.css */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    padding: 32px 256px;
+  }
+  
+  .projects-dropdowns {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .projects-lists-container {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    gap: 32px;
+    overflow-x: hidden; /* Запрещаем горизонтальный скроллинг */
+  }
+  
+  .projects-list-row {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between; /* Равномерно распределяем карточки */
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .projects-list-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: calc(50% - 16px); /* Карточки не будут выходить за пределы контейнера */
+    box-sizing: border-box;
+  }
+  

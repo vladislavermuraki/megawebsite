@@ -1,0 +1,45 @@
+/* Стили для ActionButton */
+.action-button {
+    padding: 12px 16px;
+    gap: 8px;
+    margin-top: 0px;
+    border-radius: 32px;
+    cursor: pointer;
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-body);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 150ms ease; /* Плавный переход для изменения фона */
+}
+
+/* Стили для иконок */
+.action-icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--label-light-primary); /* Цвет иконки */
+}
+
+/* Переворот иконки для левой стороны */
+.icon-flip-horizontal {
+    transform: rotate(180deg); /* Переворот иконки для левой позиции */
+}
+
+/* Primary Button Styles */
+.action-button.primary.action-button--static {
+    background-color: var(--background-primary); /* --background-primary */
+    border: 1px solid var(--label-grey-quaternary);
+    opacity: 100%;
+}
+
+.action-button.primary.action-button--hover {
+    background-color: var(--background-primary); /* --background-primary */
+    border: 1px solid var(--label-grey-quaternary);
+    opacity: 64%;
+}
+
+.action-button.primary.action-button--pressed {
+    background-color: var(--background-primary); /* --background-primary */
+    border: 1px solid var(--label-grey-quaternary);
+    opacity: 48%;
+}

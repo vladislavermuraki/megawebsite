@@ -1,0 +1,35 @@
+/* src/components/ArrowButton.css */
+
+.arrow-button {
+    width: 48px; /* Ширина кнопки */
+    height: 48px; /* Высота кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 50%; /* Делаем кнопку круглой */
+    cursor: pointer; /* Указатель при наведении */
+    display: flex; /* Используем flexbox для выравнивания содержимого */
+    align-items: center; /* Центрируем по вертикали */
+    justify-content: center; /* Центрируем по горизонтали */
+    background-color: var(--background-secondary);
+    transition: opacity 150ms ease; /* Плавный переход */
+}
+
+/* Стиль для статического состояния */
+.arrow-button.arrow-button--static {
+    opacity: 100%;
+}
+
+/* Стиль для состояния наведения */
+.arrow-button.arrow-button--hover {
+    opacity: 64%;
+}
+
+/* Стиль для нажатия */
+.arrow-button.arrow-button--pressed {
+    opacity: 48%;
+}
+
+/* Стили для иконок стрелок */
+.arrow-icon {
+    width: 18px; /* Ширина иконки */
+    height: 18px; /* Высота иконки */
+}

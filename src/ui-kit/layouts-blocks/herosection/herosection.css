@@ -1,0 +1,51 @@
+/* src/components/HeroSection.css */
+.hero {
+    display: flex;
+    flex-direction: row;
+    padding: 32px 256px; /* Отступы вокруг секции */
+    gap: 32px;
+    width: 100%;
+    height: auto; /* Занимает всю высоту окна браузера */
+    box-sizing: border-box; /* Включает паддинги в общую ширину и высоту */
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Занимает оставшееся пространство */
+    text-align: left;
+    align-items: flex-start;
+    gap: 32px; /* Уменьшенный отступ между элементами для компактности */
+    box-sizing: border-box;
+}
+
+.hero__title {
+    font-size: var(--font-size-title1); /* Размер шрифта для заголовка */
+    font-weight: var(--font-weight-regular); /* Обычный шрифт */
+    font-family: var(--font-family-helvetica);
+    margin: 0;
+    padding: 0;
+}
+
+.hero__text {
+    font-size: var(--font-size-title4); /* Размер шрифта для основного текста */
+    color: var(--label-light-secondary);
+    font-family: var(--font-family-helvetica);
+    margin: 0;
+    padding: 0;
+}
+
+.hero__image {
+    flex: 1; /* Занимает равное пространство с .hero__content */
+    display: flex;
+    align-items: center; /* Центрирует изображение по вертикали */
+    justify-content: center; /* Центрирует изображение по горизонтали */
+    box-sizing: border-box;
+}
+
+.hero__image img {
+    width: 100%; /* Ширина изображения */
+    height: 344px; /* Высота изображения */
+    object-fit: cover; /* Обрезка изображения при необходимости */
+    border-radius: 16px; /* Добавляет скругление углов для эстетики */
+}

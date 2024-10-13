@@ -1,0 +1,258 @@
+/* src/typography.css */
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('/src/ui-kit/assets/fonts/Helvetica_0.ttf') format('truetype'), /* Основной шрифт */
+         url('/src/ui-kit/assets/fonts/Helvetica-Bold_0.ttf') format('truetype'); /* Жирный шрифт */
+    font-weight: normal; /* Нормальный вес */
+    font-style: normal; /* Нормальный стиль */
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('/src/ui-kit/assets/fonts/Helvetica-BoldOblique_0.ttf') format('truetype');
+    font-weight: bold; /* Жирный вес */
+    font-style: oblique; /* Наклонный стиль */
+}
+
+@font-face {
+    font-family: 'Helvetica';
+    src: url('/src/ui-kit/assets/fonts/Helvetica-Oblique_0.ttf') format('truetype');
+    font-weight: normal; /* Нормальный вес */
+    font-style: italic; /* Наклонный стиль */
+}
+
+:root {
+    /* Font sizes */
+    --font-size-title1: 48px;
+    --font-size-title2: 32px;
+    --font-size-title3: 24px;
+    --font-size-title4: 20px;
+    --font-size-headline: 17px;
+    --font-size-body: 16px;
+    --font-size-footnote: 15px;
+    --font-size-caption1: 14px;
+    --font-size-caption2: 12px;
+    --font-size-caption3: 10px;
+
+    /* Font weights */
+    --font-weight-regular: 500;
+    --font-weight-bold: 700;
+
+    /* Font families */
+    --font-family-helvetica: 'Helvetica', sans-serif;
+}
+
+/* Title1 Styles */
+.title1-regular {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-title1);
+    font-weight: var(--font-weight-regular);
+}
+
+.title1-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-title1);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Title2 Styles */
+.title2-regular {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-title2);
+    font-weight: var(--font-weight-regular);
+}
+
+.title2-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-title2);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Title3 Styles */
+.title3-regular {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-title3);
+    font-weight: var(--font-weight-regular);
+}
+
+.title3-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-title3);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Title4 Styles */
+.title4-regular {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-title4);
+    font-weight: var(--font-weight-regular);
+}
+
+.title4-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-title4);
+    font-weight: var(--font-weight-bold);
+}
+
+/* Headline Styles */
+.headline-regular {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-headline);
+    font-weight: var(--font-weight-regular);
+}
+
+.headline-italic {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-headline);
+    font-weight: var(--font-weight-regular);
+    font-style: italic;
+}
+
+.headline-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-headline);
+    font-weight: var(--font-weight-bold);
+}
+
+.headline-italic-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-headline);
+    font-weight: var(--font-weight-bold);
+    font-style: italic;
+}
+
+/* Body Styles */
+.body-regular {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+}
+
+.body-italic {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-regular);
+    font-style: italic;
+}
+
+.body-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-bold);
+}
+
+.body-italic-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-bold);
+    font-style: italic;
+}
+
+/* Footnote Styles */
+.footnote-regular {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-footnote);
+    font-weight: var(--font-weight-regular);
+}
+
+.footnote-italic {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-footnote);
+    font-weight: var(--font-weight-regular);
+    font-style: italic;
+}
+
+.footnote-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-footnote);
+    font-weight: var(--font-weight-bold);
+}
+
+.footnote-italic-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-footnote);
+    font-weight: var(--font-weight-bold);
+    font-style: italic;
+}
+
+/* Caption1 Styles */
+.caption1-regular {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-caption1);
+    font-weight: var(--font-weight-regular);
+}
+
+.caption1-italic {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-caption1);
+    font-weight: var(--font-weight-regular);
+    font-style: italic;
+}
+
+.caption1-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-caption1);
+    font-weight: var(--font-weight-bold);
+}
+
+.caption1-italic-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-caption1);
+    font-weight: var(--font-weight-bold);
+    font-style: italic;
+}
+
+/* Caption2 Styles */
+.caption2-regular {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-caption2);
+    font-weight: var(--font-weight-regular);
+}
+
+.caption2-italic {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-caption2);
+    font-weight: var(--font-weight-regular);
+    font-style: italic;
+}
+
+.caption2-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-caption2);
+    font-weight: var(--font-weight-bold);
+}
+
+.caption2-italic-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-caption2);
+    font-weight: var(--font-weight-bold);
+    font-style: italic;
+}
+
+/* Caption3 Styles */
+.caption3-regular {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-caption3);
+    font-weight: var(--font-weight-regular);
+}
+
+.caption3-italic {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-caption3);
+    font-weight: var(--font-weight-regular);
+    font-style: italic;
+}
+
+.caption3-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-caption3);
+    font-weight: var(--font-weight-bold);
+}
+
+.caption3-italic-bold {
+    font-family: var(--font-family-helvetica);
+    font-size: var(--font-size-caption3);
+    font-weight: var(--font-weight-bold);
+    font-style: italic;
+}

@@ -1,0 +1,17 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 256px; /* Отступы */
+}
+
+.header__logo {
+    width: 83px; /* Ширина логотипа (при необходимости измените) */
+    height: auto; /* Автоматическая высота для пропорций */
+}
+
+.header__nav {
+    display: flex;
+    gap: 10px; /* Отступ между кнопками */
+}

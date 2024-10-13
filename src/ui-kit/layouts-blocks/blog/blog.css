@@ -1,0 +1,42 @@
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    padding: 32px 256px;
+}
+
+.blog-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.blog-navigation {
+    display: flex;
+    gap: 16px;
+}
+
+.blog-cards {
+    display: flex;
+    overflow-x: scroll;
+    gap: 32px;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+.blog-card {
+    flex: 0 0 calc((100% - 32px) / 2);
+    max-width: calc((100% - 32px) / 2);
+    height: auto;
+    scroll-snap-align: start;
+    overflow: hidden;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.blog-cards::-webkit-scrollbar {
+    display: none;
+}

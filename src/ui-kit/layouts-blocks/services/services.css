@@ -1,0 +1,77 @@
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 48px;
+    padding: 32px 256px;
+}
+
+.title {
+    margin-bottom: 16px; /* Отступ между заголовком и каруселью */
+}
+
+.services-carousel {
+    display: flex;
+    width: 100%;
+    align-items: center; /* Центрирование элементов по вертикали */
+    gap: 32px; /* Отступ между каруселью и навигационными кнопками */
+}
+
+.carousel-buttons {
+    display: flex;
+    align-items: center;
+    overflow-x: auto; /* Позволяет прокручивать элементы */
+    white-space: nowrap; /* Предотвращает перенос элементов на новую строку */
+    gap: 32px; /* Отступ между кнопками карусели */
+    scroll-behavior: auto; /* Убирает анимацию при прокрутке */
+}
+
+.carousel-buttons::-webkit-scrollbar {
+    display: none; /* Скрывает полосу прокрутки для вебкитов (Chrome, Safari) */
+}
+
+.carousel-buttons {
+    -ms-overflow-style: none; /* Скрывает полосу прокрутки для IE и Edge */
+    scrollbar-width: none; /* Скрывает полосу прокрутки для Firefox */
+}
+
+.carousel-button {
+    flex: 0 0 auto; /* Запрещает кнопкам сжиматься или растягиваться */
+}
+
+.navigation-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.nav-button {
+    padding: 10px 16px; /* Отступ внутри кнопки */
+    border: none; /* Убираем границы */
+    background-color: var(--label-light-primary); /* Цвет фона кнопки */
+    color: #fff; /* Цвет текста кнопки */
+    cursor: pointer; /* Указатель при наведении */
+}
+
+.nav-button:hover {
+    background-color: var(--label-light-secondary); /* Цвет фона при наведении */
+}
+
+.services-list {
+    display: flex;
+    width: 100%;
+    gap: 32px; /* Отступ между карточками */
+}
+
+/* Добавляем новый контейнер для services-list */
+.services-lists-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px; /* Отступ между дочерними блоками */
+}
+
+.services-list {
+    display: flex;
+    width: 100%;
+    gap: 32px; /* Отступ между карточками */
+}

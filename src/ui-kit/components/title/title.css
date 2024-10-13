@@ -1,0 +1,55 @@
+.title {
+    margin-bottom: 0px;
+}
+
+.title-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0; /* Убирает отступы */
+}
+
+/* Размеры для заголовков */
+.title--large {
+    font-size: var(--font-size-title2); /* Размер шрифта для большого заголовка */
+    font-weight: var(--font-weight-regular); /* Жирный шрифт */
+}
+
+.title--medium {
+    font-size: var(--font-size-title4); /* Размер шрифта для среднего заголовка */
+    font-weight: var(--font-weight-regular); /* Обычный шрифт */
+}
+
+.title--small {
+    font-size: var(--font-size-body); /* Размер шрифта для маленького заголовка */
+    font-weight: var(--font-weight-regular); /* Обычный шрифт */
+}
+
+/* Размеры для подзаголовков */
+.subtitle--large {
+    font-size: var(--font-size-title4); /* Размер шрифта для большого подзаголовка */
+    font-weight: var(--font-weight-regular);
+    color: var(--label-light-secondary); /* Цвет подзаголовка */
+}
+
+.subtitle--medium {
+    font-size: var(--font-size-body); /* Размер шрифта для среднего подзаголовка */
+    font-weight: var(--font-weight-regular);
+    color: var(--label-light-secondary); /* Цвет подзаголовка */
+}
+
+.subtitle--small {
+    font-size: var(--font-size-caption1); /* Размер шрифта для маленького подзаголовка */
+    font-weight: var(--font-weight-regular);
+    color: var(--label-light-secondary); /* Цвет подзаголовка */
+}
+
+/* Классы для контейнера с или без подзаголовка */
+.title--withsubtitle {
+    /* Например, добавляем отступы */
+}
+
+.title--withoutsubtitle {
+    /* Можем добавить специфические стили для контейнера без подзаголовка */
+}

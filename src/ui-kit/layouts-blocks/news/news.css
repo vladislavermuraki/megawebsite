@@ -1,0 +1,42 @@
+.news-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 48px;
+    padding: 32px 256px;
+}
+
+.news-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.news-navigation {
+    display: flex;
+    gap: 16px;
+}
+
+.news-cards {
+    display: flex;
+    overflow-x: scroll; /* Enable horizontal scroll */
+    gap: 32px; /* Gap between the cards */
+    scroll-snap-type: x mandatory; /* Snap effect for smooth scrolling */
+    scroll-behavior: smooth; /* Smooth scroll behavior */
+    width: 100%; /* Ensure it spans the full width of the parent */
+}
+
+.news-card {
+    flex: 0 0 calc((100% - 32px) / 2); /* Each card takes 50% of the container minus the gap */
+    max-width: calc((100% - 32px) / 2); /* Ensure max width is also 50% of the parent */
+    height: auto; /* Ensure the height adjusts according to the content */
+    scroll-snap-align: start; /* Ensure the card aligns when scrolled */
+    overflow: hidden; /* Hide overflow content */
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.news-cards::-webkit-scrollbar {
+    display: none; /* Скрываем скроллбар */
+}
